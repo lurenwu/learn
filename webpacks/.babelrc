@@ -1,0 +1,6 @@
+{
+    "presets": ["env", "react" ,"stage-0"]
+}
+//env根据配置环境计算bebel对代码填充何种等级的polyfill(垫片),已包括es2015的配置
+//使用babel编译react
+//stage-0,1,2,3与ES7相关的配置

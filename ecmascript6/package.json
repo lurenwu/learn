@@ -1,0 +1,18 @@
+{
+  "name": "webpacks",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "webpack": "^3.11.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --open "
+  },
+  "author": "chenlin",
+  "license": "ISC"
+}

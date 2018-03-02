@@ -1,0 +1,11 @@
+{
+   "name": "demo",
+   "description": "My First Express App",
+   "version": "0.0.1",
+   "dependencies": {
+      "multer": "^1.3.0"
+   },
+   "devDependencies": {
+      "hbs": "^4.0.1"
+   }
+}
