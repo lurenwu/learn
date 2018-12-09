@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSONP TEST</title>
+</head>
+<body>
+    <script src="./jsonp.js"></script>
+    <script>
+        window.JSONP('http://localhost:9999').then(data=>{
+            console.log(data)
+        })
+    </script>
+  <!-- <script>
+  function callback(obj){
+    console.log(obj);
+  }
+
+  </script>
+  <script src="http://localhost:9999"></script> -->
+</body>
+</html>

@@ -1,4 +1,5 @@
 window.JSONP = function(url, callback){
+  debugger
     callback = callback || 'callback';
     var result;
     return new Promise((resolve, reject) => {
@@ -23,6 +24,6 @@ window.JSONP = function(url, callback){
     });
   };
   
-  window.JSONP('http://localhost:9999/abc').then((data) => {
+  window.JSONP('http://localhost:9999').then((data) => {
     console.log(data);
   });

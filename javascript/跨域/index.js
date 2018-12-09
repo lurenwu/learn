@@ -15,21 +15,6 @@ server.listen(9999, () => {
   console.log('started.')
 });
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>JSONP TEST</title>
-</head>
-<body>
-  <script>
-  function callback(obj){
-    console.log(obj);
-  }
-  </script>
-  <script src="http://localhost:9999/abc"></script>
-</body>
-</html>
 
 
 {/* 打开这个页面后，我们会看到控制台会输出一个对象Object {url: "/abc", name: "test"}, 也就是后端返回的对象。
