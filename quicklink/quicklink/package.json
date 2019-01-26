@@ -1,0 +1,86 @@
+{
+  "_from": "quicklink",
+  "_id": "quicklink@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Zk0+RLevrrrrPzcPO9IKBAbmtFrinDP0ifSxeft5AG9eI+lBsvQ2XFjH7kceuS+LNehtZatQX+3LyEDYAPpmrg==",
+  "_location": "/quicklink",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "quicklink",
+    "name": "quicklink",
+    "escapedName": "quicklink",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/quicklink/-/quicklink-1.0.0.tgz",
+  "_shasum": "71cb32be603d0ded93a7a48cf3c7e101ea4b1f6d",
+  "_spec": "quicklink",
+  "_where": "/Users/chenlin/learn/quicklink",
+  "author": {
+    "name": "addyosmani",
+    "email": "addyosmani@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/addyosmani/quicklink/issues"
+  },
+  "bundleDependencies": false,
+  "bundlesize": [
+    {
+      "path": "./dist/*.js",
+      "maxSize": "2 kB"
+    }
+  ],
+  "deprecated": false,
+  "description": "Faster subsequent page-loads by prefetching in-viewport links during idle time",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "bundlesize": "^0.17.0",
+    "chai": "^4.2.0",
+    "cross-var": "^1.1.0",
+    "eslint": "^5.9.0",
+    "eslint-config-google": "^0.11.0",
+    "http-server": "^0.11.1",
+    "lodash": "^4.17.11",
+    "microbundle": "^0.7.0",
+    "mocha": "^5.2.0",
+    "puppeteer": "^1.10.0"
+  },
+  "homepage": "https://github.com/addyosmani/quicklink#readme",
+  "jsnext:main": "dist/quicklink.mjs",
+  "keywords": [
+    "prefetch",
+    "performance",
+    "fetch",
+    "intersectionobserver",
+    "background",
+    "speed"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/quicklink.js",
+  "module": "dist/quicklink.mjs",
+  "name": "quicklink",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addyosmani/quicklink.git"
+  },
+  "scripts": {
+    "build": "microbundle src/index.mjs --no-sourcemap",
+    "bundlesize": "bundlesize",
+    "lint": "eslint src/*.mjs test/*.js demos/*.js",
+    "lint-fix": "eslint src/*.mjs test/*.js --fix demos/*.js",
+    "prepare": "npm run -s build",
+    "release": "cross-var npm run build -s && cross-var git commit -am $npm_package_version && cross-var git tag $npm_package_version && git push && git push --tags",
+    "start": "http-server .",
+    "test": "npm run build && mocha test/bootstrap.js --recursive test"
+  },
+  "umd:main": "dist/quicklink.umd.js",
+  "unpkg": "dist/quicklink.umd.js",
+  "version": "1.0.0"
+}
